@@ -1,0 +1,29 @@
+/*^  Header ********************************/
+header {
+  color: #333333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding-bottom: 15px;
+}
+.header_logo {
+  max-width: 150px;
+  color: #edeade;
+}
+
+.nav-icon {
+  color: #333333;
+}
+.header-color {
+  color: #333333;
+}
+
+.nav-link{
+    color: #333333;
+}
+
+.nav-link:hover{
+    opacity: 0.75;
+}

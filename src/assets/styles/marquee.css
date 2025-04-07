@@ -1,0 +1,48 @@
+.marquee-container {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: flex;
+  width: 200%; /* Make sure the text spans twice the width */
+  animation: marquee 8s linear infinite;
+}
+
+.marquee span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding-right: 2rem; /* Space between repetitions */
+  animation: wave 2s ease-in-out infinite;
+}
+
+/* Scroll effect */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Wavy effect */
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
